@@ -5,32 +5,41 @@
     <!-- ICON -->
     <link rel="icon" href="">
 
-    <!-- PERSONAL SCRIPTS & CSS -->
-    <link rel="stylesheet" type="text/css" href="">
-    <script src="clock.js"></script>
-
     <!-- LIBRARY TEMPLATE -->
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <!-- PERSONAL SCRIPTS & CSS -->
+    <link rel="stylesheet" type="text/css" href="clock.css">
+    <script src="clock.js"></script>
 
 </head>
 <body>
 
-<div class="clock">
-    <div id="date">
+
+<div class="container">
+
+    <div class="info">
+        <p>Simple System Clock - Jquery</p>
     </div>
 
-    <ul>
-        <li id="hours"></li>
-        <li id="point"></li>
-        <li id="min"></li>
-        <li id="point"></li>
-        <li id="sec"></li>
-    </ul>
+    <div class="jumbotron">
+        <div class="col s12 clock">
+            <div id="date">
+            </div>
+
+            <ul>
+                <li id="hours"></li>
+                <li id="dots">:</li>
+                <li id="min"></li>
+                <li id="dots">:</li>
+                <li id="sec"></li>
+            </ul>
+        </div>
+    </div>
 </div>
 
 </body>

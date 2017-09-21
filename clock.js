@@ -1,14 +1,14 @@
 
 $(document).ready(function () {
 
-    var months = ['January', 'February', 'March', 'April', 'May', 'JuNe', 'July', 'August', 'September', 'October', 'November', 'December'];
+    var monthNames = ['January', 'February', 'March', 'April', 'May', 'JuNe', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-    var dates = [ 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    var dayNames = [ 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
     var newDate = new Date();
     newDate.setDate(newDate.getDate());
 
-    $('#Date').html(dates[newDate.getDate()] + ' ' + newDate.getDate() + ' ' + months[newDate.getMonth()] + ' ' + newDate.getFullYear());
+    $('#date').html(dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
 
     setInterval(function () {
         var seconds = new Date().getSeconds();
@@ -22,7 +22,7 @@ $(document).ready(function () {
 
     setInterval(function () {
         var hours = new Date().getHours();
-        $('#hours').html((hours < 10 ? '0' : '') + hors);
+        $('#hours').html((hours < 10 ? '0' : '') + hours);
     },1000);
 
 });
