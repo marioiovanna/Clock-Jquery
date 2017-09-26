@@ -23,3 +23,5 @@ Add a leading zero to the seconds value, the same applies for the minutes and ho
 
 **setInterval function**
 setInterval is a standard JavaScript function, not part of jQuery. You call it with a function to execute and a period in milliseconds.
+
+Live Demo: https://marioiovanna.github.io/Clock-Jquery/
